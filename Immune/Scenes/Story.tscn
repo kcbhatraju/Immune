@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Fonts/LiberationSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Story.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/SkipButton.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 28
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=10]
+default_font = SubResource( 9 )
+
+[node name="Story" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.016
+anchor_top = 1.032
+anchor_right = 0.016
+anchor_bottom = 1.032
+margin_left = -0.384001
+margin_top = -0.200012
+margin_right = 988.616
+margin_bottom = 710.8
+theme = SubResource( 2 )
+text = "Long long ago, on a not so far away planet, a vile combination
+
+of creatures known as bacteria and virus has infiltrated the human
+
+body. They have quickly spread, invading anything they can get
+
+their hands on. The body is quickly failing and all hope appears to
+
+be lost when suddenly! A bacteria macrophage has emerged from
+
+the chaos. Killing off bacteria in droves, there seemed to be hope
+
+in the human body once again. However, viruses seem to have a
+
+different idea… can our hero triumph over the germs to save
+ 
+the body?"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SkipButton" type="Button" parent="."]
+anchor_left = 0.894
+anchor_right = 0.894
+margin_left = -0.456055
+margin_top = 15.0
+margin_right = 82.5439
+margin_bottom = 53.0
+theme = SubResource( 10 )
+text = "Skip"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
